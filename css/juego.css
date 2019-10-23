@@ -37,15 +37,30 @@ li::before {
 
 .col-60 {
   background: #E84A5F;
-
 }
 
 #flecha{
   font-size: 60px;
 }
 
+#instrucciones{
+  color:#E84A5F;
+  font-family: fantasy;
+  font-size: 16px;
+}
+.imgPiezas{
+  width: 99%;
+  height: 99%;
+  border: 1px;  
+}
+
 .texto-centrado {
   text-align: center;
+}
+
+#juego{
+  width: 600px; 
+  height: 600px;
 }
 
 #juego div {
@@ -57,3 +72,30 @@ li::before {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+.piezas{
+ width: 33%;
+ height: 33%;
+ float: left;
+ 
+}
+
+#objetivo{
+  color:#E84A5F;
+  font-family: fantasy;
+  font-size: 12px;
+}
+
+#titulo{
+  color:#E84A5F;
+  font-family: fantasy;
+  font-size: 16px;
+}
+
+#ultimo-mov{
+  color:#E84A5F;
+  font-family: fantasy;
+  font-size: 16px;
+}
+
+
+
