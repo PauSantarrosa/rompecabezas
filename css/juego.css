@@ -82,7 +82,7 @@ li::before {
 #objetivo{
   color:#E84A5F;
   font-family: fantasy;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 #titulo{
@@ -97,5 +97,10 @@ li::before {
   font-size: 16px;
 }
 
+#footer{
+  color:#E84A5F;
+  font-family: fantasy;
+  font-size: 16px;
+}
 
 
