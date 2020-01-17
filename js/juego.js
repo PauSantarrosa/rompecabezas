@@ -39,12 +39,24 @@ function agregarUltimaDireccion(direccion){
 Existen diferentes formas de hacer este chequeo a partir de la grilla. */
 function chequearSiGano() {
     //COMPLETAR
-  
+    var fila=0;
+    var validar="1,2,3,4,5,6,7,8,9";
+    var arrayFila=new Array();
+    while(fila < grilla.length){
+      arrayFila = arrayFila.concat(grilla[fila]);
+      fila=fila +1;
+    }
+    if(validar === arrayFila.toString()){
+      return true;
+    }else{
+      return false;
+    }
 }
 
 // Implementar alguna forma de mostrar un cartel que avise que ganaste el juego
 function mostrarCartelGanador() {
     //COMPLETAR
+     alert("HOLA ERES UN GANADOR!!");
 }
 
 /* Función que intercambia dos posiciones en la grilla.
@@ -59,6 +71,9 @@ Se te ocurre cómo solucionar esto con una variable temporal?
 */
 function intercambiarPosicionesGrilla(filaPos1, columnaPos1, filaPos2, columnaPos2) {
     //COMPLETAR
+    var elemento = grilla[filaPos1][columnaPos1];
+    grilla[filaPos1][columnaPos1] = grilla[filaPos2][columnaPos2] ;
+    grilla[filaPos2][columnaPos2] =elemento;
 }
 
 // Actualiza la posición de la pieza vacía
@@ -69,7 +84,12 @@ function actualizarPosicionVacia(nuevaFila, nuevaColumna) {
 
 // Para chequear si la posicón está dentro de la grilla.
 function posicionValida(fila, columna) {
-    //COMPLETAR
+  //COMPLETAR
+  if (((0 <= fila) && (fila < grilla.length)) && ((0 <= columna) && (columna < grilla.length))) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /* Movimiento de fichas, en este caso la que se mueve es la blanca intercambiando su posición con otro elemento.
