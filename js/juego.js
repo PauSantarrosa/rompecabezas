@@ -56,7 +56,18 @@ function chequearSiGano() {
 // Implementar alguna forma de mostrar un cartel que avise que ganaste el juego
 function mostrarCartelGanador() {
     //COMPLETAR
-     alert("¡¡Ganaste!!" );
+     Swal.fire({
+      title: '¡¡Ganaste!!',
+      width: 600,
+      padding: '3em',
+      background: '#fff url(/images/trees.png)',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("/images/nyan-cat.gif")
+        left top
+        no-repeat
+      `
+    })
 }
 
 /* Función que intercambia dos posiciones en la grilla.
