@@ -1,5 +1,5 @@
 // Arreglo que contiene las intrucciones del juego 
-var instrucciones = ["Arriba","Abajo","Derecha","Izquierda"];
+var instrucciones = ["Para lograr el objetivo del juego deberás valerte de las flechas de tu teclado para mover las fichas","Las fichas solo se moveran si precionas las teclas de: Arriba, Abajo, Izquierda o Derecha","Solo podrás mover una ficha hacia la posición que se encuentra vacía","Dos fichas no pueden intercambiar lugar entre sí","Tienes un número ilimitados de movimientos para lograrlo","Al final el mejor jugador es aquel que logra el objetivo con el menor número de movimientos ¡¡Adelante!!"];
 // Arreglo para ir guardando los movimientos que se vayan realizando
 var movimientos = [];
 
